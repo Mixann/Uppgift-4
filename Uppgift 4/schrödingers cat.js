@@ -4,6 +4,10 @@ const cat = {
 }
 
 function showCat() {
-  cat.alive = Math.random() > 0.5
-  alert("Katten " + cat.name + (cat.alive ? " är levande" : " är död"))
-}
+  cat.alive = Math.random() > 0.5;
+  if (cat.alive) {
+   alert("Katten " + cat.name + " är levande")
+  } else {
+   alert("Katten " + cat.name +  " är död")
+    }
+  }
