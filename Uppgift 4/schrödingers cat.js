@@ -1,9 +1,9 @@
-
-
 const cat = {
   alive: true,
-  name: "Gustav"
+  name: "Gustav",
 }
+
 function showCat() {
-  alert(cat.name);
+  cat.alive = Math.random() > 0.5
+  alert("Katten " + cat.name + (cat.alive ? " är levande" : " är död"))
 }
